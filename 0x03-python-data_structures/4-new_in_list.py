@@ -5,6 +5,6 @@ def new_in_list(my_list, idx, element):
     elif idx >= len(my_list):
         return (my_list)
     else:
-        t = my_list
+        t = my_list[:]
         t[idx] = element
         return (t)
